@@ -5,21 +5,38 @@
 
 int main()
 {
-    bString naw = "Hello World";
+    bString header = "Dawid Zgoda II CZI - Modul 4";
+    bString str = "Hello World";
+    str.append("czyli Witaj Świecie");
+    header.println();
+    str.println();
 
-    naw.println();
-    cout << "Znaki Białe: " << naw.countWhiteChars() << endl; // licz
-    cout << "Znaki: " << naw.count() << endl;
-    cout << "Samogłoski: " << naw.countbylettertype() << endl;
-    cout << "Lini: " << naw.countLines() << endl;
-    naw.reverse();
-    cout << "Wyrazy: " << naw.toString() << endl;
-    bString ciag = "kajak";
+    bString str_size = str;
+    //Zadanie 1
+    cout << "Zadanie 1" << endl;
+    str_size.reverseSize();
+    str_size.println();
+    //ZADANIE 2
+    cout << "Zadanie 2" << endl;
+    bString ciag = "Kajak";
     string palindrome = ciag.palindrome() ? "tak" : "nie";
-    cout << "Palindrom: " << palindrome << endl;
-    //naw.println();
-    //naw.append("Hello");
-   // naw.searchandreplace("Hello", "World");
-    //naw.println();
+    cout << "Palindrom (" << ciag.toString() << "): " << palindrome << endl;
+
+    cout << "Zadanie 3" << endl;
+    cout << "Samogłoski: " << str.countbylettertype() << endl;
+
+    cout << "Zadanie 4" << endl;
+    str.searchandreplace("Hello", "Witaj");
+    str.println();
+
+    str = "Zadanie 6";
+    str.println();
+    cout << "Znaki Białe: " << str.countWhiteChars() << endl; // licz
+    cout << "Znaki: " << str.count() << endl;
+    cout << "Samogłoski: " << str.countbylettertype() << endl;
+    cout << "Odwrócony: " << str.toString() << endl;
+
+   
+
 }
 
