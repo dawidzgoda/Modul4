@@ -34,6 +34,7 @@ int main()
     cout << "Znaki Białe: " << str.countWhiteChars() << endl; // licz
     cout << "Znaki: " << str.count() << endl;
     cout << "Samogłoski: " << str.countbylettertype() << endl;
+    str.reverse();
     cout << "Odwrócony: " << str.toString() << endl;
 
    

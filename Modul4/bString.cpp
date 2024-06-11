@@ -61,7 +61,7 @@ void bString::append(string in) {
 		memo += in;
 		return;
 	}
-	memo += in + " ";
+	memo += " "+in;
 }
 void bString::newline() {
 	memo += "\n";
