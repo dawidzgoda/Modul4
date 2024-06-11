@@ -61,7 +61,7 @@ void bString::append(string in) {
 		memo += in;
 		return;
 	}
-	memo += in + " ";
+	memo += " "+in;
 }
 void bString::newline() {
 	memo += "\n";
@@ -136,9 +136,9 @@ int bString::countWords(string world) {
 	return a;
 }
 bool bString::palindrome() {
-	bString* b_temp = this;
-	b_temp->reverse();
-	b_temp->equals(memo);
+	bString b_temp = new string(memo);
+	b_temp.reverse();
+	b_temp.equals(memo);
 	return true;
 }
 string bString::clearWhiteChars() {
